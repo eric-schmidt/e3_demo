@@ -1,0 +1,32 @@
+name = Elevated Third Demo
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/elevated-third-demo.normalize.css
+stylesheets[all][] = css/elevated-third-demo.hacks.css
+stylesheets[all][] = css/elevated-third-demo.styles.css
+stylesheets[all][] = css/elevated-third-demo.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/elevated-third-demo.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
