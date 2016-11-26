@@ -1,0 +1,10 @@
+$grids: 12;
+$gutters: 1/3;
+
+$xs: 20em; // extra small
+$s: 30em; // small
+$m: 44em; // medium
+$l: 70em; // large
+
+// touch device styles only for breakpoint
+$touch: point coarse, 'no-query''.touch';
