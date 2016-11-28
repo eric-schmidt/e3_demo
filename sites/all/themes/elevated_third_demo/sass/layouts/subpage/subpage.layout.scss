@@ -18,3 +18,19 @@
 // dependencies shouldn't be a problem.
 @import "../../variables/**/*";
 @import "../../base/**/*";
+
+.l-header {
+	background: lightblue;
+}
+
+.l-main {
+	background: pink;
+	margin: 0 auto;
+	@include breakpoint($m, true) {
+		width: $m;
+	}
+	@include breakpoint($l, true) {
+		width: $l;
+	}
+	@include clearfix;
+}

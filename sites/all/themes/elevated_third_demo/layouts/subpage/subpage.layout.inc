@@ -13,5 +13,5 @@ regions[footer] = Footer
 ; ========================================
 ; Styles
 ; ========================================
-stylesheets[all][] = css/layouts/splash/subpage.layout.css
-stylesheets[all][] = css/layouts/splash/subpage.no-query.layout.css
+stylesheets[all][] = css/layouts/subpage/subpage.layout.css
+stylesheets[all][] = css/layouts/subpage/subpage.no-query.layout.css

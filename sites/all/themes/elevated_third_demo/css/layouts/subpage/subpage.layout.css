@@ -1,5 +1,31 @@
+/* line 1, ../../../sass/base/_lists.scss */
+.breadcrumb {
+  display: none; }
+
 /* line 1, ../../../sass/base/_media.scss */
 img, media {
   max-width: 100%; }
+
+/* line 22, ../../../sass/layouts/subpage/subpage.layout.scss */
+.l-header {
+  background: lightblue; }
+
+/* line 26, ../../../sass/layouts/subpage/subpage.layout.scss */
+.l-main {
+  background: pink;
+  margin: 0 auto; }
+  @media (min-width: 44em) {
+    /* line 26, ../../../sass/layouts/subpage/subpage.layout.scss */
+    .l-main {
+      width: 44em; } }
+  @media (min-width: 70em) {
+    /* line 26, ../../../sass/layouts/subpage/subpage.layout.scss */
+    .l-main {
+      width: 70em; } }
+  /* line 13, ../../../../../../../../../../../.rvm/gems/ruby-2.3.0/gems/toolkit-2.10.0/stylesheets/toolkit/_clearfix.scss */
+  .l-main:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /*# sourceMappingURL=subpage.layout.css.map */
