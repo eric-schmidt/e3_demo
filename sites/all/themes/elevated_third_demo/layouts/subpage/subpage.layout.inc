@@ -1,0 +1,17 @@
+name = Subpage
+description = Subpage layout.
+template = subpage-layout
+
+; ========================================
+; Regions
+; ========================================
+regions[navigation] = Navigation
+regions[help] = Help
+regions[content] = Content
+regions[footer] = Footer
+
+; ========================================
+; Styles
+; ========================================
+stylesheets[all][] = css/layouts/splash/subpage.layout.css
+stylesheets[all][] = css/layouts/splash/subpage.no-query.layout.css
