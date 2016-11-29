@@ -1,0 +1,9 @@
+.constrained {
+	margin: 0 auto;
+	@include breakpoint($m, true) {
+		width: $m;
+	}
+	@include breakpoint($l, true) {
+		width: $l;
+	}
+}

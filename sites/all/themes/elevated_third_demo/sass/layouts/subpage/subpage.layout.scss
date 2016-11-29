@@ -17,20 +17,58 @@
 // output any styles themselves: Importing them multiple times to resolve
 // dependencies shouldn't be a problem.
 @import "../../variables/**/*";
+@import "../../components/**/*";
 @import "../../base/**/*";
 
 .l-header {
-	background: lightblue;
+	@extend .constrained;
+	@include clearfix;
 }
 
-.l-main {
+.l-content {
 	background: pink;
-	margin: 0 auto;
-	@include breakpoint($m, true) {
-		width: $m;
-	}
-	@include breakpoint($l, true) {
-		width: $l;
-	}
+	@extend .constrained;
 	@include clearfix;
+}
+
+
+.pane-events-events-pane {
+	text-align: center;
+	.pane-title {
+		display: inline-block;
+		padding: 10px;
+		background: red;
+		color: #fff;
+		-webkit-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	.view-events {
+		text-align: left;
+		@include breakpoint($m, true) {
+			.views-row {
+				display: inline-block;
+				width: 32%;
+				margin-right: 1%;
+				vertical-align: top;
+			}
+		}
+		.views-field-field-heading-image {
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 103%;
+				height: 30%;
+				margin-left: -2%;
+				background: pink;
+				-webkit-transform: rotate(2deg);
+				-ms-transform: rotate(2deg);
+				transform: rotate(2deg);
+			}
+		}
+	}
 }

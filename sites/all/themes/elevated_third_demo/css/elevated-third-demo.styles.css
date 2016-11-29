@@ -1,10 +1,51 @@
 /* No files to import found in abstractions/**\/* */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+/* line 1, ../sass/base/_lists.scss */
+.breadcrumb {
+  display: none; }
+
 /* line 1, ../sass/base/_media.scss */
 img, media {
   max-width: 100%; }
 
-/* line 24, ../sass/elevated-third-demo.styles.scss */
-body {
-  background: black; }
+/* line 3, ../sass/base/_typography.scss */
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 1, ../sass/components/_constrained.scss */
+.constrained {
+  margin: 0 auto; }
+  @media (min-width: 44em) {
+    /* line 1, ../sass/components/_constrained.scss */
+    .constrained {
+      width: 44em; } }
+  @media (min-width: 70em) {
+    /* line 1, ../sass/components/_constrained.scss */
+    .constrained {
+      width: 70em; } }
+
+@media (min-width: 44em) {
+  /* line 2, ../sass/components/_navigation.scss */
+  .l-branding {
+    width: 23.72881%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+
+  /* line 5, ../sass/components/_navigation.scss */
+  .l-region--navigation {
+    width: 74.57627%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+/* line 11, ../sass/components/_navigation.scss */
+nav ul {
+  list-style-type: none;
+  list-style-image: none; }
+  /* line 14, ../sass/components/_navigation.scss */
+  nav ul li {
+    display: inline-block; }
 
 /*# sourceMappingURL=elevated-third-demo.styles.css.map */
