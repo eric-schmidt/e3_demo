@@ -41,7 +41,18 @@ img, media {
 * {
   font-family: 'Open Sans', sans-serif; }
 
-/* line 23, ../../../sass/layouts/subpage/subpage.layout.scss */
+/* line 1, ../../../sass/abstractions/_extends.scss */
+.angled, .pane-events-events-pane .view-events .banner:after, .pane-events-events-pane .view-events .date:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  -moz-transform: skew(0deg, 7deg);
+  -ms-transform: skew(0deg, 7deg);
+  -webkit-transform: skew(0deg, 7deg);
+  transform: skew(0deg, 7deg); }
+
+/* line 25, ../../../sass/layouts/subpage/subpage.layout.scss */
 .l-header {
   width: 83.05085%;
   float: right;
@@ -57,7 +68,7 @@ img, media {
   margin-right: 0;
   clear: none; }
 
-/* line 40, ../../../sass/layouts/subpage/subpage.layout.scss */
+/* line 38, ../../../sass/layouts/subpage/subpage.layout.scss */
 .pane-events-events-pane {
   text-align: center;
   width: 83.05085%;
@@ -65,7 +76,7 @@ img, media {
   margin-right: -100%;
   margin-left: 0;
   clear: none; }
-  /* line 45, ../../../sass/layouts/subpage/subpage.layout.scss */
+  /* line 43, ../../../sass/layouts/subpage/subpage.layout.scss */
   .pane-events-events-pane .pane-title {
     display: inline-block;
     padding: 10px;
@@ -74,30 +85,80 @@ img, media {
     -webkit-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     transform: rotate(2deg); }
-  /* line 54, ../../../sass/layouts/subpage/subpage.layout.scss */
+  /* line 52, ../../../sass/layouts/subpage/subpage.layout.scss */
   .pane-events-events-pane .view-events {
     text-align: left; }
-    /* line 57, ../../../sass/layouts/subpage/subpage.layout.scss */
+    /* line 55, ../../../sass/layouts/subpage/subpage.layout.scss */
     .pane-events-events-pane .view-events .views-row {
       display: inline-block;
-      width: 32%;
+      width: 31.5%;
       margin-right: 1%;
       vertical-align: top; }
-    /* line 64, ../../../sass/layouts/subpage/subpage.layout.scss */
-    .pane-events-events-pane .view-events .views-field-field-heading-image {
+    /* line 62, ../../../sass/layouts/subpage/subpage.layout.scss */
+    .pane-events-events-pane .view-events .content {
+      z-index: 0; }
+    /* line 65, ../../../sass/layouts/subpage/subpage.layout.scss */
+    .pane-events-events-pane .view-events .banner {
       position: relative; }
-      /* line 66, ../../../sass/layouts/subpage/subpage.layout.scss */
-      .pane-events-events-pane .view-events .views-field-field-heading-image:after {
-        content: '';
+      /* line 3, ../../../sass/abstractions/_mixins.scss */
+      .pane-events-events-pane .view-events .banner:before {
         display: block;
+        content: "";
+        width: 100%;
+        padding-top: 56.25%; }
+      /* line 9, ../../../sass/abstractions/_mixins.scss */
+      .pane-events-events-pane .view-events .banner > .content {
         position: absolute;
-        bottom: -2px;
-        left: -2px;
-        width: 102%;
-        height: 30%;
-        background: #fff;
-        -webkit-transform: rotate(2deg);
-        -ms-transform: rotate(2deg);
-        transform: rotate(2deg); }
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+      /* line 67, ../../../sass/layouts/subpage/subpage.layout.scss */
+      .pane-events-events-pane .view-events .banner:after {
+        bottom: -50px;
+        left: 0;
+        z-index: 0;
+        width: 101%;
+        height: 100px; }
+    /* line 76, ../../../sass/layouts/subpage/subpage.layout.scss */
+    .pane-events-events-pane .view-events .date {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      background: #fff;
+      padding: 15px 30px 5px 30px;
+      text-align: center; }
+      /* line 83, ../../../sass/layouts/subpage/subpage.layout.scss */
+      .pane-events-events-pane .view-events .date span {
+        display: block; }
+      /* line 86, ../../../sass/layouts/subpage/subpage.layout.scss */
+      .pane-events-events-pane .view-events .date:after {
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 25px; }
+    /* line 95, ../../../sass/layouts/subpage/subpage.layout.scss */
+    .pane-events-events-pane .view-events .details {
+      position: relative;
+      z-index: 1;
+      margin-top: -25px; }
+
+/* line 105, ../../../sass/layouts/subpage/subpage.layout.scss */
+.views-field-field-heading-image {
+  position: relative; }
+  /* line 107, ../../../sass/layouts/subpage/subpage.layout.scss */
+  .views-field-field-heading-image:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 102%;
+    height: 30%;
+    background: #fff;
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg); }
 
 /*# sourceMappingURL=subpage.layout.no-query.css.map */

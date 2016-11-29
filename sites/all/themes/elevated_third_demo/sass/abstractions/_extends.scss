@@ -1,0 +1,7 @@
+.angled {
+	content: "";
+	display: block;
+	position: absolute;
+	background: $main-bkgd;
+	@include skew(0deg, 7deg);
+}

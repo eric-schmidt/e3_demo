@@ -1,5 +1,15 @@
-/* No files to import found in abstractions/**\/* */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+/* line 1, ../sass/abstractions/_extends.scss */
+.angled {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  -moz-transform: skew(0deg, 7deg);
+  -ms-transform: skew(0deg, 7deg);
+  -webkit-transform: skew(0deg, 7deg);
+  transform: skew(0deg, 7deg); }
+
 /* line 1, ../sass/base/_lists.scss */
 .breadcrumb {
   display: none; }
