@@ -21,19 +21,27 @@
 @import "../../base/**/*";
 
 .l-header {
-	@extend .constrained;
-	@include clearfix;
+	@include breakpoint($m, true) {
+		@include grid-span(10,3);
+	}
+	// @extend .constrained;
+	// @include clearfix;
 }
 
 .l-content {
-	background: pink;
-	@extend .constrained;
-	@include clearfix;
+	@include breakpoint($m, true) {
+		@include grid-span(10,3);
+	}
+	// @extend .constrained;
+	// @include clearfix;
 }
 
 
 .pane-events-events-pane {
 	text-align: center;
+	@include breakpoint($m, true) {
+		@include grid-span(10,1);
+	}
 	.pane-title {
 		display: inline-block;
 		padding: 10px;
@@ -59,12 +67,11 @@
 				content: '';
 				display: block;
 				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 103%;
+				bottom: -2px;
+				left: -2px;
+				width: 102%;
 				height: 30%;
-				margin-left: -2%;
-				background: pink;
+				background: $main-bkgd;
 				-webkit-transform: rotate(2deg);
 				-ms-transform: rotate(2deg);
 				transform: rotate(2deg);
