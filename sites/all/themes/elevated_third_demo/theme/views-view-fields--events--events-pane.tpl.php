@@ -30,7 +30,7 @@
 	// get content vars for use in templating below
 	$content_link = drupal_get_path_alias('node/' . $row->nid);
 	$month = date('M', strtotime($row->field_field_date[0]['raw']['value']));
-	$day = date('n', strtotime($row->field_field_date[0]['raw']['value']));
+	$day = date('j', strtotime($row->field_field_date[0]['raw']['value']));
 	$start_time = date('g:iA', strtotime($row->field_field_date[0]['raw']['value']));
 	$end_time = date('g:iA', strtotime($row->field_field_date[0]['raw']['value2']));
 	$img_url = image_style_url('large', $row->field_field_heading_image[0]['rendered']['#item']['uri']);
