@@ -28,7 +28,30 @@ nav {
 			list-style-type: none;
 			list-style-image: none;
 			a {
+				color: $accent2;
 				text-decoration: none;
+				&:after {
+					content: "";
+					display: block;
+					position: relative;
+					top: 3px;
+					width: 0%;
+					height: 3px;
+					background: $primary;
+					-webkit-transition: width 0.5s;
+					transition: width 0.5s;
+				}
+				&:hover, &.active {
+					&:after {
+						content: "";
+						display: block;
+						position: relative;
+						top: 3px;
+						width: 100%;
+						height: 3px;
+						background: $primary;
+					}
+				}
 			}
 		}
 	}
