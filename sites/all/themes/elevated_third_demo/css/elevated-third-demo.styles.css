@@ -50,13 +50,22 @@ img, media {
     margin-left: 0;
     margin-right: 0;
     clear: none; } }
-/* line 11, ../sass/components/_navigation.scss */
-nav ul {
-  list-style-type: none;
-  list-style-image: none; }
-  /* line 14, ../sass/components/_navigation.scss */
-  nav ul li {
-    display: inline-block; }
+/* line 10, ../sass/components/_navigation.scss */
+nav {
+  border-top: 25px solid blue;
+  transform: skew(25deg, 0deg); }
+  /* line 13, ../sass/components/_navigation.scss */
+  nav ul {
+    transform: skew(-25deg, 0deg); }
+    /* line 15, ../sass/components/_navigation.scss */
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+      list-style-type: none;
+      list-style-image: none; }
+      /* line 20, ../sass/components/_navigation.scss */
+      nav ul li a {
+        text-decoration: none; }
 
 /* line 24, ../sass/elevated-third-demo.styles.scss */
 body {

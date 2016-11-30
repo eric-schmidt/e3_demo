@@ -8,11 +8,18 @@
 }
 
 nav {
+	border-top: 25px solid blue;
+	transform: skew(25deg, 0deg);
 	ul {
-		list-style-type: none;
-		list-style-image: none;
+		transform: skew(-25deg, 0deg);
 		li {
 			display: inline-block;
+			margin: 0 15px;
+			list-style-type: none;
+			list-style-image: none;
+			a {
+				text-decoration: none;
+			}
 		}
 	}
 }
