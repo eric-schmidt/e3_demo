@@ -47,13 +47,13 @@
 		<?php print "</div>"; // end .content ?>
 	<?php print "</div></a>"; // end .banner ?>
 	<?php print "<div class='details'>"; ?>
-		<?php print "<a href='$content_link'>" . ($row->node_title) . "</a>"; ?>
 		<?php if($start_time != $end_time): ?>
-			<?php print "<span>" . $start_time . " - " . $end_time . "</span>"; ?>
+			<?php print "<span class='time'>" . $start_time . " - " . $end_time . "</span>"; ?>
 		<?php else: ?>
-			<?php print "<span>" . $start_time . "</span>"; ?>
+			<?php print "<span class='time'>" . $start_time . "</span>"; ?>
 		<?php endif; ?>
-		<?php print "<a class='more-info' href='$content_link'>Learn More</a>"; ?>
+		<?php print "<a class='title' href='$content_link'>" . ($row->node_title) . "</a>"; ?>
+		<?php print "<a href='$content_link'><span class='more-info'>Learn More</span></a>"; ?>
 	<?php print "</div>"; // end .details ?>
 <?php print "</div>"; // end .event ?>
 

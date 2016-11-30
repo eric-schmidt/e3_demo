@@ -3,3 +3,20 @@
 * {
 	font-family: 'Open Sans', sans-serif;
 }
+
+h1 {
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+	color: $primary;
+	font-size: 2.5em;
+}
+p {
+	margin: 0;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	color: $accent2;
+	@include breakpoint($m, true) {
+		font-size: 0.9em;
+		line-height: 2em;
+	}
+}

@@ -29,18 +29,18 @@
 
 	$title = $row->node_title;
 	$tagline = $row->field_field_tagline[0]['rendered']['#markup'];
-	$heading_image = image_style_url('x-large', $row->field_field_heading_image[0]['rendered']['#item']['uri']);
+	$img_url = image_style_url('x-large', $row->field_field_heading_image[0]['rendered']['#item']['uri']);
 
 ?>
 
 <?php print "<div class='page-heading'>"; ?>
-	<?php print "<div class='text'>"; ?>
-		<?php print "<h1>" . $title . "</h1"; ?>
-		<?php print "<p>" . $tagline . "</p>"; ?>
-	<?php print "</div>"; // end .text ?>
-	<?php print "<div class='image'>"; ?>
-		<?php print "<img src='" . $heading_image . "'>"; ?>
-	<?php print "</div>"; // end .image ?>
+	<?php print "<div class='text-container'>"; ?>
+		<?php print "<div class='text'>"; ?>
+			<?php print "<h1>" . $title . "</h1>"; ?>
+			<?php print "<p>" . $tagline . "</p>"; ?>
+		<?php print "</div>"; // end .text ?>
+	<?php print "</div>"; // end .text-container ?>
+	<?php print "<div class='image' style='background: url($img_url) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;min-height:300px;display:block;'></div>"; ?>
 <?php print "</div>"; // end .page-heading ?>
 
 <!-- default views templating left in place in order to use contextual links -->

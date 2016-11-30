@@ -1,4 +1,10 @@
-.angled {
+.angledX {
+	content: "";
+	display: block;
+	position: absolute;
+	@include skew(25deg, 0deg);
+}
+.angledY {
 	content: "";
 	display: block;
 	position: absolute;

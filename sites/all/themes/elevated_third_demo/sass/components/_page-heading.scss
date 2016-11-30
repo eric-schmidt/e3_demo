@@ -1,0 +1,52 @@
+.logo {
+	margin-top: 5px;
+}
+
+// Banner/Text Heading For Each Page
+.page-heading {
+	@include clearfix;
+	.text-container {
+		position: relative;
+		z-index: 1;
+		display: block;
+		min-height: 300px;
+		.text {
+			position: absolute;
+			bottom: 0;
+			left: 15px;
+			@include breakpoint($m, true) {
+				left: 0;
+			}
+		}
+		@include breakpoint($s, true) {
+			@include grid-span(3,1);
+		}
+		@include breakpoint($m, true) {
+			@include grid-span(4,1);
+		}
+	}
+	.image {
+		position: relative;
+		z-index: 0;
+		display: block;
+		min-height: 300px;
+		@include breakpoint($s, true) {
+			@include grid-span(9,4);
+		}
+		@include breakpoint($m, true) {
+			@include grid-span(8,5);
+		}
+		&:before {
+			content: "";
+			display: block;
+			width: 200px;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: -100px;
+			background: $main-bkgd;
+			@extend .angledX;
+		}
+	}
+}
