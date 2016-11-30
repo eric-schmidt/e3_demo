@@ -1,5 +1,7 @@
-$breakpoint-no-queries: true;
-$breakpoint-no-query-fallbacks: true;
+@import "breakpoint";
+
+@include breakpoint-set('no queries', true);
+@include breakpoint-set('no query fallbacks', true);
 
 // Re-render everything from styles.scss but without media queries.
 @import "elevated-third-demo.styles";
