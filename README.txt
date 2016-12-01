@@ -1,123 +1,13 @@
+ABOUT THIS DEMO
+---------------
 
-CONTENTS OF THIS FILE
----------------------
+While some liberties were taken with this theme as it relates to responsiveness, every effort was made to remain faithful to the original PSD and create a pixel perfect representation. The custom theme was built from the ground up using the Omega 4 theme framework and the Singularity (SASS) responsive grid framework. While Omega 4 can be quite daunting at first, it has quickly become my go-to for building out custom responsive sites in Drupal due to it's insanely easy scaffolding and painless integrations with Bower, Bundler, Guard, and a plethora of other systems.
 
- * About Drupal
- * Configuration and features
- * Installation profiles
- * Appearance
- * Developing for Drupal
+As stated above, this site is built using the Singularity grid framework, which is a brilliantly easy-to-use responsive framework built on top of SASS, and fully integrated into Omega 4. The compilation of all stylesheets and components is accomplished through the use of Ruby Bundler and Guard. It can be tricky to get these up and running at first, but the steps are fairly simple:
 
-ABOUT DRUPAL
-------------
+1. Navigate to the theme folder in terminal (/sites/all/themes/elevated_third_demo).
+2. Switch to the preferred version of Ruby using RVM (>= 2.2.5).
+3. Run 'bundle install' to install the required gems (sass, singularity, breakpoint, etc.)
+4. Run 'bundle exec guard'. This will start watching all SASS files within the theme and will automatically compile them. Guard will also initiate LiveReload, allowing quick browswer reloads if you have the extension installed.
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, see the Drupal website at http://drupal.org/, and join the
-Drupal community at http://drupal.org/community.
-
-Legal information about Drupal:
- * Know your rights when using Drupal:
-   See LICENSE.txt in the same directory as this document.
- * Learn about the Drupal trademark and logo policy:
-   http://drupal.com/trademark
-
-CONFIGURATION AND FEATURES
---------------------------
-
-Drupal core (what you get when you download and extract a drupal-x.y.tar.gz or
-drupal-x.y.zip file from http://drupal.org/project/drupal) has what you need to
-get started with your website. It includes several modules (extensions that add
-functionality) for common website features, such as managing content, user
-accounts, image uploading, and search. Core comes with many options that allow
-site-specific configuration. In addition to the core modules, there are
-thousands of contributed modules (for functionality not included with Drupal
-core) available for download.
-
-More about configuration:
- * Install, upgrade, and maintain Drupal:
-   See INSTALL.txt and UPGRADE.txt in the same directory as this document.
- * Learn about how to use Drupal to create your site:
-   http://drupal.org/documentation
- * Download contributed modules to sites/all/modules to extend Drupal's
-   functionality:
-   http://drupal.org/project/modules
- * See also: "Developing for Drupal" for writing your own modules, below.
-
-INSTALLATION PROFILES
----------------------
-
-Installation profiles define additional steps (such as enabling modules,
-defining content types, etc.) that run after the base installation provided
-by core when Drupal is first installed. There are two basic installation
-profiles provided with Drupal core.
-
-Installation profiles from the Drupal community modify the installation process
-to provide a website for a specific use case, such as a CMS for media
-publishers, a web-based project tracking tool, or a full-fledged CRM for
-non-profit organizations raising money and accepting donations. They can be
-distributed as bare installation profiles or as "distributions". Distributions
-include Drupal core, the installation profile, and all other required
-extensions, such as contributed and custom modules, themes, and third-party
-libraries. Bare installation profiles require you to download Drupal Core and
-the required extensions separately; place the downloaded profile in the
-/profiles directory before you start the installation process. Note that the
-contents of this directory may be overwritten during updates of Drupal core;
-it is advised to keep code backups or use a version control system.
-
-Additionally, modules and themes may be placed inside subdirectories in a
-specific installation profile such as profiles/your_site_profile/modules and
-profiles/your_site_profile/themes respectively to restrict their usage to only
-sites that were installed with that specific profile.
-
-More about installation profiles and distributions:
- * Read about the difference between installation profiles and distributions:
-   http://drupal.org/node/1089736
- * Download contributed installation profiles and distributions:
-   http://drupal.org/project/distributions
- * Develop your own installation profile or distribution:
-   http://drupal.org/developing/distributions
-
-APPEARANCE
-----------
-
-In Drupal, the appearance of your site is set by the theme (themes are
-extensions that set fonts, colors, and layout). Drupal core comes with several
-themes. More themes are available for download, and you can also create your own
-custom theme.
-
-More about themes:
- * Download contributed themes to sites/all/themes to modify Drupal's
-   appearance:
-   http://drupal.org/project/themes
- * Develop your own theme:
-   http://drupal.org/documentation/theme
-
-DEVELOPING FOR DRUPAL
----------------------
-
-Drupal contains an extensive API that allows you to add to and modify the
-functionality of your site. The API consists of "hooks", which allow modules to
-react to system events and customize Drupal's behavior, and functions that
-standardize common operations such as database queries and form generation. The
-flexible hook architecture means that you should never need to directly modify
-the files that come with Drupal core to achieve the functionality you want;
-instead, functionality modifications take the form of modules.
-
-When you need new functionality for your Drupal site, search for existing
-contributed modules. If you find a module that matches except for a bug or an
-additional needed feature, change the module and contribute your improvements
-back to the project in the form of a "patch". Create new custom modules only
-when nothing existing comes close to what you need.
-
-More about developing:
- * Search for existing contributed modules:
-   http://drupal.org/project/modules
- * Contribute a patch:
-   http://drupal.org/patch/submit
- * Develop your own module:
-   http://drupal.org/developing/modules
- * Follow best practices:
-   http://drupal.org/best-practices
- * Refer to the API documentation:
-   http://api.drupal.org/api/drupal/7
+This site makes extensive use of both Views Content Panes and Panels Node Templates. By integrating Views and Node Templates, the developer is able to create extremely flexible layouts that can be displayed in an infinite number of ways, while also maintaining usablity for content editors, who may not have a large amount of technical Drupal knowledge. For the purpsoses of this demo, content has been split into one of two types: 'Basic Pages' and 'Events'. The basic page holds the primary nodes found in the main menu, while individual events are added and subsequently aggregated on the main events page. In addition, events that have already been added can be quickly and easily edited by using the contextual edit links that appear on hover. In keeping with best practices, Views is used to add aggregated fields, while the formatting is kept within Views templates--leaving all markup in version-controlled code and outside of the database. For the purposes of this demo, Views UI has been left enabled; however, it is typically disabled on production sites, opting instead to use the built-in import/export feature to move from dev to production.
