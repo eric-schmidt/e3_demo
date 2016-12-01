@@ -45,16 +45,16 @@
     -webkit-transform: rotate(1deg);
     -ms-transform: rotate(1deg);
     transform: rotate(1deg); }
-    /* line 17, ../../../sass/components/_event-listing.scss */
+    /* line 15, ../../../sass/components/_event-listing.scss */
     .pane-events-events-pane .pane-title span {
       display: block;
       -webkit-transform: rotate(-1deg);
       -ms-transform: rotate(-1deg);
       transform: rotate(-1deg); }
-  /* line 24, ../../../sass/components/_event-listing.scss */
+  /* line 20, ../../../sass/components/_event-listing.scss */
   .pane-events-events-pane .view-events {
     text-align: left; }
-    /* line 26, ../../../sass/components/_event-listing.scss */
+    /* line 22, ../../../sass/components/_event-listing.scss */
     .pane-events-events-pane .view-events .views-row {
       margin-bottom: 30px;
       padding-bottom: 15px;
@@ -68,13 +68,13 @@
       margin-right: 2%;
       width: 31.5%;
       margin-right: 1%; }
-      /* line 43, ../../../sass/components/_event-listing.scss */
+      /* line 39, ../../../sass/components/_event-listing.scss */
       .pane-events-events-pane .view-events .views-row:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
-    /* line 47, ../../../sass/components/_event-listing.scss */
+    /* line 43, ../../../sass/components/_event-listing.scss */
     .pane-events-events-pane .view-events .content {
       z-index: 0; }
-    /* line 50, ../../../sass/components/_event-listing.scss */
+    /* line 46, ../../../sass/components/_event-listing.scss */
     .pane-events-events-pane .view-events .banner {
       overflow: hidden;
       position: relative; }
@@ -91,14 +91,14 @@
         left: 0;
         right: 0;
         bottom: 0; }
-      /* line 53, ../../../sass/components/_event-listing.scss */
+      /* line 49, ../../../sass/components/_event-listing.scss */
       .pane-events-events-pane .view-events .banner:after {
         bottom: -50px;
         left: 0;
         z-index: 0;
         width: 101%;
         height: 100px; }
-    /* line 62, ../../../sass/components/_event-listing.scss */
+    /* line 58, ../../../sass/components/_event-listing.scss */
     .pane-events-events-pane .view-events .date {
       position: absolute;
       top: 0;
@@ -106,49 +106,49 @@
       background: #fff;
       padding: 15px 30px 5px 30px;
       text-align: center; }
-      /* line 69, ../../../sass/components/_event-listing.scss */
+      /* line 65, ../../../sass/components/_event-listing.scss */
       .pane-events-events-pane .view-events .date span {
         display: block; }
-        /* line 71, ../../../sass/components/_event-listing.scss */
+        /* line 67, ../../../sass/components/_event-listing.scss */
         .pane-events-events-pane .view-events .date span.month {
           margin-bottom: -5px;
           font-size: 0.8em;
           font-weight: bold;
           color: #15cadb; }
-        /* line 77, ../../../sass/components/_event-listing.scss */
+        /* line 73, ../../../sass/components/_event-listing.scss */
         .pane-events-events-pane .view-events .date span.day {
           font-size: 1.6em;
           color: #363636; }
-      /* line 82, ../../../sass/components/_event-listing.scss */
+      /* line 78, ../../../sass/components/_event-listing.scss */
       .pane-events-events-pane .view-events .date:after {
         bottom: -10px;
         left: 0;
         z-index: -1;
         width: 100%;
         height: 25px; }
-    /* line 91, ../../../sass/components/_event-listing.scss */
+    /* line 87, ../../../sass/components/_event-listing.scss */
     .pane-events-events-pane .view-events .details {
       position: relative;
       z-index: 1;
       margin-top: -25px;
       margin-right: 15px;
       margin-left: 15px; }
-      /* line 97, ../../../sass/components/_event-listing.scss */
+      /* line 93, ../../../sass/components/_event-listing.scss */
       .pane-events-events-pane .view-events .details .time {
         display: block;
         color: #15cadb;
         font-size: 0.8em;
         font-weight: bold; }
-      /* line 103, ../../../sass/components/_event-listing.scss */
+      /* line 99, ../../../sass/components/_event-listing.scss */
       .pane-events-events-pane .view-events .details a {
         display: block;
         text-decoration: none; }
-        /* line 106, ../../../sass/components/_event-listing.scss */
+        /* line 102, ../../../sass/components/_event-listing.scss */
         .pane-events-events-pane .view-events .details a.title {
           font-size: 1.6em;
           line-height: 1.2em;
           color: #363636; }
-        /* line 111, ../../../sass/components/_event-listing.scss */
+        /* line 107, ../../../sass/components/_event-listing.scss */
         .pane-events-events-pane .view-events .details a .more-info {
           display: inline-block;
           position: relative;
@@ -158,7 +158,7 @@
           font-size: 0.8em;
           color: #f41361;
           border-top: 3px solid #f41361; }
-          /* line 120, ../../../sass/components/_event-listing.scss */
+          /* line 116, ../../../sass/components/_event-listing.scss */
           .pane-events-events-pane .view-events .details a .more-info:after {
             position: absolute;
             top: 10px;
@@ -170,7 +170,13 @@
             background-image: url("/sites/all/themes/elevated_third_demo/images/learn-more-btn.jpg");
             background-repeat: no-repeat; }
 
-/* line 2, ../../../sass/components/_navigation.scss */
+/* line 13, ../../../../../../../../../../../.rvm/gems/ruby-2.2.5/gems/toolkit-2.10.0/stylesheets/toolkit/_clearfix.scss */
+.l-header:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 4, ../../../sass/components/_navigation.scss */
 .l-branding {
   width: 23.72881%;
   float: left;
@@ -178,7 +184,7 @@
   margin-left: 0;
   clear: none; }
 
-/* line 5, ../../../sass/components/_navigation.scss */
+/* line 7, ../../../sass/components/_navigation.scss */
 .l-region--navigation {
   width: 74.57627%;
   float: right;
@@ -186,11 +192,13 @@
   margin-right: 0;
   clear: none; }
 
-/* line 10, ../../../sass/components/_navigation.scss */
+/* line 11, ../../../sass/components/_navigation.scss */
 nav {
   position: relative;
+  margin-bottom: 10px;
+  margin-bottom: 0;
   border-top: 25px solid #15cadb; }
-  /* line 13, ../../../sass/components/_navigation.scss */
+  /* line 18, ../../../sass/components/_navigation.scss */
   nav:before {
     content: "";
     display: block;
@@ -200,95 +208,131 @@ nav {
     height: 25px;
     width: 25px;
     background: #15cadb; }
-  /* line 25, ../../../sass/components/_navigation.scss */
-  nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    list-style-type: none;
-    list-style-image: none; }
-    /* line 30, ../../../sass/components/_navigation.scss */
-    nav ul li a {
-      color: #363636;
-      text-decoration: none; }
-      /* line 33, ../../../sass/components/_navigation.scss */
-      nav ul li a:after {
-        content: "";
-        display: block;
-        position: relative;
-        top: 3px;
-        width: 0%;
-        height: 3px;
-        background: #15cadb;
-        -webkit-transition: width 0.5s;
-        transition: width 0.5s; }
-      /* line 45, ../../../sass/components/_navigation.scss */
-      nav ul li a:hover:after, nav ul li a.active:after {
-        content: "";
-        display: block;
-        position: relative;
-        top: 3px;
-        width: 100%;
-        height: 3px;
-        background: #15cadb; }
+  /* line 31, ../../../sass/components/_navigation.scss */
+  nav ul {
+    margin: 0;
+    padding-left: 5px;
+    margin: 10px 0;
+    padding-left: 50px; }
+    /* line 38, ../../../sass/components/_navigation.scss */
+    nav ul li {
+      display: inline-block;
+      margin: 5px 10px;
+      list-style-type: none;
+      list-style-image: none;
+      font-size: 0.8em;
+      margin: 0 8px;
+      font-size: 1em;
+      margin: 0 15px; }
+      /* line 51, ../../../sass/components/_navigation.scss */
+      nav ul li a {
+        color: #363636;
+        text-decoration: none; }
+        /* line 54, ../../../sass/components/_navigation.scss */
+        nav ul li a:after {
+          content: "";
+          display: block;
+          position: relative;
+          top: 1px;
+          width: 0%;
+          height: 3px;
+          background: #15cadb;
+          -webkit-transition: width 0.5s;
+          transition: width 0.5s;
+          top: 3px; }
+        /* line 69, ../../../sass/components/_navigation.scss */
+        nav ul li a:hover:after, nav ul li a.active:after {
+          content: "";
+          display: block;
+          position: relative;
+          top: 1px;
+          width: 100%;
+          height: 3px;
+          background: #15cadb;
+          top: 3px; }
 
 /* line 1, ../../../sass/components/_page-heading.scss */
 .logo {
   margin-top: 5px; }
 
-/* line 13, ../../../../../../../../../../../.rvm/gems/ruby-2.2.5/gems/toolkit-2.10.0/stylesheets/toolkit/_clearfix.scss */
-.page-heading:after {
-  content: "";
-  display: table;
-  clear: both; }
-/* line 8, ../../../sass/components/_page-heading.scss */
-.page-heading .text-container {
-  position: relative;
-  z-index: 1;
-  display: block;
-  min-height: 300px;
-  width: 23.72881%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  width: 32.20339%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-  /* line 13, ../../../sass/components/_page-heading.scss */
-  .page-heading .text-container .text {
+/* line 6, ../../../sass/components/_page-heading.scss */
+.page-heading {
+  position: relative; }
+  /* line 13, ../../../../../../../../../../../.rvm/gems/ruby-2.2.5/gems/toolkit-2.10.0/stylesheets/toolkit/_clearfix.scss */
+  .page-heading:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 9, ../../../sass/components/_page-heading.scss */
+  .page-heading .text-container {
     position: absolute;
     bottom: 0;
-    left: 15px;
-    left: 0; }
-/* line 28, ../../../sass/components/_page-heading.scss */
-.page-heading .image {
-  position: relative;
-  z-index: 0;
-  display: block;
-  min-height: 300px;
-  width: 74.57627%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  width: 66.10169%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-  /* line 39, ../../../sass/components/_page-heading.scss */
-  .page-heading .image:before {
-    content: "";
+    left: 0;
+    z-index: 1;
     display: block;
-    width: 200px;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: -100px;
-    background: #fff; }
+    margin: 15px;
+    padding: 5px 15px 15px 15px;
+    background: rgba(255, 255, 255, 0.85);
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    position: relative;
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    width: 23.72881%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    width: 32.20339%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+    /* line 26, ../../../sass/components/_page-heading.scss */
+    .page-heading .text-container .text {
+      -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      left: 0; }
+  /* line 45, ../../../sass/components/_page-heading.scss */
+  .page-heading .image {
+    position: relative;
+    z-index: 0;
+    display: block;
+    min-height: 300px;
+    width: 74.57627%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    width: 66.10169%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+    /* line 56, ../../../sass/components/_page-heading.scss */
+    .page-heading .image:before {
+      display: none;
+      content: "";
+      display: block;
+      width: 200px;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -100px;
+      background: #fff; }
 
 /* line 1, ../../../sass/base/_lists.scss */
 .breadcrumb {
@@ -315,7 +359,7 @@ p {
   font-size: 0.9em;
   line-height: 1.5em;
   color: #363636;
-  font-size: 0.9em;
+  font-size: 1.1em;
   line-height: 2em; }
 
 /* line 25, ../../../sass/layouts/subpage/subpage.layout.scss */

@@ -20,3 +20,9 @@
 	-ms-transform: skew($x, $y);
 	transform: skew($x, $y);
 }
+
+@mixin rotate($val) {
+	-webkit-transform: rotate($val);
+	-ms-transform: rotate($val);
+	transform: rotate($val);
+}

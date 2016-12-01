@@ -11,14 +11,10 @@
 		padding: 5px 15px;
 		background: $accent2;
 		color: #fff;
-		-webkit-transform: rotate(1deg);
-		-ms-transform: rotate(1deg);
-		transform: rotate(1deg);
+		@include rotate(1deg);
 		span {
 			display: block;
-			-webkit-transform: rotate(-1deg);
-			-ms-transform: rotate(-1deg);
-			transform: rotate(-1deg);
+			@include rotate(-1deg);
 		}
 	}
 	.view-events {
